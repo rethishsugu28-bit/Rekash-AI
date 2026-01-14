@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  background: linear-gradient(135deg, #141e30, #243b55);
-  font-family: Arial;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: Arial, sans-serif;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .app {
@@ -20,14 +20,29 @@ body {
   flex-direction: column;
 }
 
+.subtitle {
+  text-align: center;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
 #chat {
   flex: 1;
   overflow-y: auto;
   margin: 10px 0;
 }
 
-.user { text-align: right; color: #00eaff; margin: 6px; }
-.bot  { text-align: left;  color: #ffffff; margin: 6px; }
+.user {
+  text-align: right;
+  color: #00eaff;
+  margin: 6px;
+}
+
+.bot {
+  text-align: left;
+  color: white;
+  margin: 6px;
+}
 
 .input-box {
   display: flex;
@@ -39,6 +54,7 @@ input {
   padding: 10px;
   border-radius: 10px;
   border: none;
+  outline: none;
 }
 
 button {
